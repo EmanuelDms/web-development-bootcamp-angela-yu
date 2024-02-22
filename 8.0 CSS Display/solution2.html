@@ -4,10 +4,6 @@
 <head>
   <title>CSS Display Property Example</title>
   <style>
-    p {
-      color: white;
-    }
-
     .red {
       display: block;
       width: 200px;
@@ -28,11 +24,32 @@
       height: 200px;
       background-color: blue;
     }
+
+    #overflow-x {
+      background-color: lightblue;
+      border: 1px solid black;
+      border-radius: 12px 12px 0 0;
+      height: 100px;
+      width: 500px;
+      overflow: scroll;
+    }
+
+    #overflow-x p {
+      width: 1000px;
+      margin: 10px;
+      display: inline;
+    }
   </style>
 </head>
 
 <body>
   <h1>CSS Display Property</h1>
+
+  <div id="overflow-x">
+    <p>(Your text goes here. Also, you can place other elements within this parent div.) Lorem ipsum, dolor sit amet
+      consectetur adipisicing elit. Reiciendis fugiat, quisquam praesentium officiis a ex error sequi quae vero, esse
+      reprehenderit est eius ea, voluptas expedita accusantium perferendis officia architecto.</p>
+  </div>
   <p class="red">Red Paragraph </p>
   <p class="green">Green Paragraph</p>
   <p class="blue">Blue Paragraph</p>
